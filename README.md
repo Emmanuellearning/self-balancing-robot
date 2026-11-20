@@ -26,6 +26,10 @@ A two-wheeled self-balancing robot project modeled using **inverted pendulum on 
 ```text
 self-balancing-robot/
 ├── docs/
+│   ├── plots/                                # Simulation output plots
+│   │   ├── pitch_stabilization.png
+│   │   ├── cascade_position_pitch.png
+│   │   └── statespace_poles_response.png
 │   └── state_space_notes/                    # Handwritten state-space derivation notes
 │       ├── state_space_derivation_01.jpeg
 │       ├── state_space_derivation_02.jpeg
@@ -44,6 +48,19 @@ self-balancing-robot/
     ├── worlds/
     └── self_balancing_sim/                   # ROS 2 Python nodes
 ```
+
+---
+
+## Simulation Results
+
+### 1. Inner-Loop Pitch Stabilization (`balance_test.m`)
+![Pitch Stabilization](docs/plots/pitch_stabilization.png)
+
+### 2. Cascaded Position & Pitch Control (`full_cascade_sim.m`)
+![Cascaded Position and Pitch Control](docs/plots/cascade_position_pitch.png)
+
+### 3. State-Space Pole Placement & Open- vs. Closed-Loop Response (`matrix_statespace_sim.m`)
+![State-Space Pole Analysis and Response](docs/plots/statespace_poles_response.png)
 
 ---
 
