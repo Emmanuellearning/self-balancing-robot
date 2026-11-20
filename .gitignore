@@ -9,10 +9,14 @@ __pycache__/
 *$py.class
 *.egg-info/
 
-# MATLAB
+# MATLAB (track only the three core simulation scripts)
 *.asv
 *.m~
 slprj/
+*.m
+!self_balancing_sim/balance_test.m
+!self_balancing_sim/full_cascade_sim.m
+!self_balancing_sim/matrix_statespace_sim.m
 
 # IDE / OS
 .vscode/
